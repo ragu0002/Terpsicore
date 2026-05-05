@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Regler for navngivning
 
-## Getting Started
+## Naming Conventions
 
-First, run the development server:
+#### PascalCase
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Used for component names.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### camelCase
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Used for variables and functions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### kebab-case
 
-## Learn More
+Used for CSS class names.
 
-To learn more about Next.js, take a look at the following resources:
+#### Folder Naming
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Folders always start with a lowercase letter.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+##### Example structure:
 
-## Deploy on Vercel
+home/
+componentName/
+componentName/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Styling Guidelines
+
+#### Global CSS
+
+We maintain a global CSS file with global rules.
+
+#### Component-Specific CSS
+
+For custom or specific styles, create a CSS file (e.g. `Button.css`) and import it directly inside the component.
+
+#### Typography
+
+Typography is managed through a dedicated component that defines text styles and passes them as props.
+
+#### Colors
+
+Colors are defined in `@themes` inline inside our global CSS.
+
+#### Vanilla CSS
+
+For custom properties or more complex visual styles and functionalities, styles can be defined inside:
+
+(globals.css)
+
+`@layer components  {
+  /* component-specific styles */
+}`
+
+#### Tailwind
+
+Tailwind is used for:
+
+- sizing
+
+- colors
+
+- responsiveness
+
+- general utilities
+
+## Branching
+
+Branch names are defined by Linear.
+
+#### Main Branch Rules
+
+- Never write code directly in main.
+
+- There must never be errors when merging into main.
+
+#### Commit Messages
+
+Commit messages must follow this format:
+
+name-description-more-description
