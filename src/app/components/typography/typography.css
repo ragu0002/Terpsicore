@@ -1,0 +1,22 @@
+:root {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --step--2: clamp(0.75rem, 0.7rem + 0.25vw, 0.9rem);
+  --step--1: clamp(0.85rem, 0.8rem + 0.3vw, 1rem);
+  --step-0: clamp(1rem, 0.95rem + 0.35vw, 1.15rem);
+  --step-1: clamp(0.625rem, 0.03vw + 0.535rem, 0.9375rem);
+  --step-2: clamp(0.875rem, 0.035vw + 0.81rem, 1.25rem);
+  --step-3: clamp(1rem, 0.045vw + 0.86rem, 1.5rem);
+  --step-4: clamp(2.25rem, 0.33vw + 1.2rem, 6rem);
+  --step-5: clamp(3rem, 0.45vw + 1.6rem, 8rem);
+}
+
+.font-helvetica {
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+.accent {
+  color: var(--accent);
+}
