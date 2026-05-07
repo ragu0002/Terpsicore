@@ -26,14 +26,14 @@ export const Paragraph = ({ text, color, font = "font-helvetica" }) => (
   </p>
 );
 export const SmallParagraph = ({ text, color, font = "font-helvetica" }) => (
-  <p style={{ fontSize: "var(--step--1)" }} className={` ${color} ${font}`}>
+  <p style={{ fontSize: "var(--step-2)" }} className={` ${color} ${font}`}>
     {text}
   </p>
 );
-export const NavigationText = ({ text, color, font = "font-helvetica" }) => (
-  <li style={{ fontSize: "var(--step-1)" }} className={`uppercase ${color} ${font}`}>
+export const NavigationText = ({ size = "var(--step-2)", text, color, font = "font-helvetica" }) => (
+  <p style={{ fontSize: size }} className={`uppercase cursor-pointer list-none hover:opacity-70 ${color} ${font}`}>
     {text}
-  </li>
+  </p>
 );
 
 const Typography = ({ children }) => <>{children}</>;

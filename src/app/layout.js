@@ -1,3 +1,4 @@
+import Header from "./components/global/Header";
 import "./globals.css";
 import { Instrument_Serif, Roboto } from "next/font/google";
 
@@ -19,7 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`grid grid-cols-(--project-grid-cols) ${roboto.variable} ${instrumentSerif.variable} `}>{children}</body>
+      <body className={`grid grid-cols-(--project-grid-cols) ${roboto.variable} ${instrumentSerif.variable} `}>
+        <Header></Header>
+        {children}
+      </body>
     </html>
   );
 }
