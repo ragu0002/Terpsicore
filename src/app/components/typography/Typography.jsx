@@ -30,6 +30,11 @@ export const SmallParagraph = ({ text, color, font = "font-helvetica" }) => (
     {text}
   </p>
 );
+export const FooterText = ({ text, color, font = "font-helvetica" }) => (
+  <p style={{ fontSize: "var(--step--2)" }} className={` ${color} ${font}`}>
+    {text}
+  </p>
+);
 export const NavigationText = ({ size = "var(--step-2)", text, color, font = "font-helvetica" }) => (
   <p style={{ fontSize: size }} className={`uppercase cursor-pointer list-none hover:opacity-70 ${color} ${font}`}>
     {text}
