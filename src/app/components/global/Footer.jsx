@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="grid col-(--full-col) grid-cols-subgrid grid-rows-5">
       <div className="grid col-(--content-col) justify-items-center row-start-1 row-span-2 z-10">
-        <Image src="/assets/Logo_Original.svg" width={200} height={200} alt="Logo" />
+        <Image src="/assets/Logo_Original.svg" width={200} height={200} alt="Logo" loading="eager"  />
       </div>
 
       <section className="grid col-(--full-col) bg-foreground rounded-t-[4vw] row-start-2 row-span-4 z-0"></section>
