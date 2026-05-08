@@ -33,9 +33,9 @@ const Header = () => {
     </>
   );
   return (
-    <header className="grid col-(--content-col) grid-cols-subgrid h-30 sticky top-0 z-20">
+    <header className="grid col-(--content-col) grid-cols-subgrid h-30 sticky top-0 z-20 bg-background">
       <section className="flex justify-between items-center">
-        <Image src="/assets/Logo_Original.svg" width={60} height={60} alt="Logo" />
+        <Image src="/assets/Logo_Original.svg" width={60} height={60} alt="Logo" loading="eager" />
         <button className="cursor-pointer md:hidden -mr-2" onClick={() => setOpen((open) => !open)} aria-label="Open menu">
           <IoMenu size={40} />
         </button>
@@ -45,7 +45,7 @@ const Header = () => {
         <div className="grid col-(--project-col) grid-cols-subgrid md:hidden fixed inset-0 z-50 bg-(--accent)">
           <div className="grid grid-cols-subgrid col-content-col">
             <div className="flex justify-between text-background p-10">
-              <Image src="/assets/Logo_Light.svg" width={60} height={60} alt="Logo" />
+              <Image src="/assets/Logo_Light.svg" width={60} height={60} alt="Logo" loading="eager" />
               <button className="cursor-pointer" onClick={() => setOpen((s) => !s)} aria-label="Close menu">
                 <IoClose size={40} />
               </button>
