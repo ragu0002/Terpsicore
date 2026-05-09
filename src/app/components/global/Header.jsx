@@ -38,7 +38,11 @@ const Header = () => {
   return (
     <header className="grid col-(--content-col) grid-cols-subgrid h-30 sticky top-0 z-20 bg-background">
       <section className="flex justify-between items-center">
-        <Image src="/assets/Logo_Original.svg" width={60} height={60} alt="Logo" loading="eager" />
+        <ActiveLink href="/" className="cursor-pointer">
+          {" "}
+          <Image src="/assets/Logo_Original.svg" width={60} height={60} alt="Logo" loading="eager" />
+        </ActiveLink>
+
         <button className="cursor-pointer md:hidden -mr-2" onClick={() => setOpen((open) => !open)} aria-label="Open menu">
           <RxHamburgerMenu size={40} />
         </button>

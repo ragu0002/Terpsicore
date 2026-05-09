@@ -16,17 +16,17 @@ export const LargeText = ({ text, color, font = "font-helvetica" }) => (
   </h3>
 );
 export const RegularText = ({ text, color, font = "font-helvetica" }) => (
-  <h4 style={{ fontSize: "var(--step-0)" }} className={`uppercase ${color} ${font}`}>
+  <h4 style={{ fontSize: "var(--step-2)" }} className={`uppercase ${color} ${font}`}>
     {text}
   </h4>
 );
 export const Paragraph = ({ text, color, font = "font-helvetica" }) => (
-  <p style={{ fontSize: "var(--step-2)" }} className={`  ${color} ${font}`}>
+  <p style={{ fontSize: "var(--step-1)" }} className={`  ${color} ${font}`}>
     {text}
   </p>
 );
 export const SmallParagraph = ({ text, color, font = "font-helvetica" }) => (
-  <p style={{ fontSize: "var(--step-2)" }} className={` ${color} ${font}`}>
+  <p style={{ fontSize: "var(--step-0)" }} className={` ${color} ${font}`}>
     {text}
   </p>
 );
