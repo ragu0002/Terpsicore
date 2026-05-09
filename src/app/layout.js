@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`grid grid-cols-(--project-grid-cols) ${roboto.variable} ${instrumentSerif.variable} `}>
+      <body className={`grid grid-cols-(--project-grid-cols) grid-rows-[auto_1fr_auto] ${roboto.variable} ${instrumentSerif.variable} `}>
         <Header />
         {children}
         <Footer />

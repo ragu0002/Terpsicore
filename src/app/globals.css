@@ -5,7 +5,7 @@
   --foreground: #581013;
   --accent: #b90009;
   --gutter: 1.7rem;
-  --project-grid-cols: [full-start] var(--gutter) [content-start] minmax(0, min(90vw, calc(100vw - 2 * var(--gutter)))) [content-end] var(--gutter) [full-end];
+  --project-grid-cols: [full-start] var(--gutter) [content-start] minmax(0, calc(100vw - 2 * var(--gutter))) [content-end] var(--gutter) [full-end];
 }
 
 @theme inline {

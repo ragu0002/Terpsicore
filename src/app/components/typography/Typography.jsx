@@ -16,7 +16,7 @@ export const LargeText = ({ text, color, font = "font-helvetica" }) => (
   </h3>
 );
 export const RegularText = ({ text, color, font = "font-helvetica" }) => (
-  <h4 style={{ fontSize: "var(--step-3)" }} className={`uppercase ${color} ${font}`}>
+  <h4 style={{ fontSize: "var(--step-0)" }} className={`uppercase ${color} ${font}`}>
     {text}
   </h4>
 );
@@ -31,11 +31,11 @@ export const SmallParagraph = ({ text, color, font = "font-helvetica" }) => (
   </p>
 );
 export const FooterText = ({ text, color, font = "font-helvetica" }) => (
-  <p style={{ fontSize: "var(--step--2)" }} className={` ${color} ${font}`}>
+  <p style={{ fontSize: "var(--step--1)" }} className={` ${color} ${font}`}>
     {text}
   </p>
 );
-export const NavigationText = ({ size = "var(--step-2)", text, color, font = "font-helvetica" }) => (
+export const NavigationText = ({ size = "var(--step-0)", text, color, font = "font-helvetica" }) => (
   <p style={{ fontSize: size }} className={`uppercase cursor-pointer list-none hover:opacity-70 ${color} ${font}`}>
     {text}
   </p>
