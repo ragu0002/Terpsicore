@@ -1,5 +1,6 @@
 import Footer from "./components/global/Footer";
 import Header from "./components/global/Header";
+
 import "./globals.css";
 import { Instrument_Serif, Roboto } from "next/font/google";
 
