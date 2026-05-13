@@ -6,8 +6,8 @@ import { SmallParagraph, XlargeText } from "../typography";
 const OmOss = () => {
   return (
     <section className="grid col-(--full-col) grid-cols-subgrid mt-15 overflow-hidden">
-      <div className="col-(--content-col) grid grid-cols-2 items-start gap-10">
-        <div className="grid gap-4">
+      <div className="col-(--content-col) grid md:grid-cols-2 items-start gap-10">
+        <div className="grid gap-4 md:pr-0 pr-15">
           <XlargeText text="om oss" color="accent" />
           <SmallParagraph text="Vi er et dansekompani for dedikerte danseglade studenter, som siden 2010 har vært en arena for dans på høyt nivå for studenter i Bergen. Terpsichore består av rundt 20 studenter fra ulike studiesteder i byen. Kompaniet er selvdrevet, og alt fra koreografier til daglig drift gjøres internt i kompaniet. Kompaniets stilart varierer avhengig av medlemmenes dansebakgrunn, men består i hovedsak av jazz/lyrisk jazz, moderne og hip hop." />
           <div className="flex justify-end">
