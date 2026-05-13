@@ -1,5 +1,5 @@
 import ImageOverlay from "@/app/components/global/imageoverlay/ImageOverlay";
-import { Paragraph, SmallParagraph } from "@/app/components/typography";
+import { Paragraph, SmallParagraph, XlargeText } from "@/app/components/typography";
 import Landing from "@/app/components/workshop/Landing";
 import Workshop from "@/app/components/workshop/Workshop";
 import { getStoryblokApi } from "@/lib/storyblok";
@@ -11,9 +11,12 @@ export default async function WorkshopPage() {
   return (
     <main className="grid col-(--content-col) grid-cols-subgrid">
       <Landing />
-      {data.stories.map((story) => (
-        <Workshop key={story.id} blok={story.content} />
-      ))}
+      <section className="grid gap-5">
+        <XlargeText text="kommende Workshops" color="accent" />
+        {data.stories.map((story) => (
+          <Workshop key={story.id} blok={story.content} />
+        ))}
+      </section>
     </main>
   );
 }

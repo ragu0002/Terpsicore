@@ -1,11 +1,20 @@
+import Image from "next/image";
+import { LargeText, Paragraph, SmallParagraph } from "../typography";
+import Button from "../global/Button";
 export default function Workshop({ blok }) {
   return (
-    <section>
-      <h1>{blok.name}</h1>
-      <p>{blok.introduction}</p>
-      <p>{blok.price} kr</p>
-
-      <img src={blok.main_image.filename} alt={blok.main_image.alt || "image"} style={{ maxWidth: "100%" }} />
+    <section className="grid md:flex gap-10 min-h-140 w-full">
+      <div className="rounded-4xl overflow-hidden basis-0 grow w-full h-full">
+        <Image width={200} height={200} src={blok.main_image.filename} alt={blok.main_image.alt || "image"} className="w-full h-full object-cover" />{" "}
+      </div>
+      <div className="basis-0 grow">
+        <div className="grid md:py-5 gap-4 ">
+          <SmallParagraph text={blok.date} color="accent" />
+          <LargeText text={blok.name} />
+          <SmallParagraph text={blok.introduction} />
+          <Button text="Les mer" />
+        </div>
+      </div>
     </section>
   );
 }
