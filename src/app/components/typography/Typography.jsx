@@ -6,7 +6,7 @@ export const Hero = ({ text, color, font = "font-helvetica" }) => (
   </h1>
 );
 export const XlargeText = ({ text, color, font = "font-serif" }) => (
-  <h2 style={{ fontSize: "var(--step-4)" }} className={`uppercase  ${color} ${font}`}>
+  <h2 style={{ fontSize: "var(--step-5)" }} className={`uppercase  ${color} ${font}`}>
     {text}
   </h2>
 );
