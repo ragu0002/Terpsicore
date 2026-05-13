@@ -5,13 +5,13 @@ export const Hero = ({ text, color, font = "font-helvetica" }) => (
     {text}
   </h1>
 );
-export const XlargeText = ({ text, color, font = "font-helvetica" }) => (
+export const XlargeText = ({ text, color, font = "font-serif" }) => (
   <h2 style={{ fontSize: "var(--step-4)" }} className={`uppercase  ${color} ${font}`}>
     {text}
   </h2>
 );
 export const LargeText = ({ text, color, font = "font-helvetica" }) => (
-  <h3 style={{ fontSize: "var(--step-3)" }} className={`uppercase ${color} ${font}`}>
+  <h3 style={{ fontSize: "var(--step-2)" }} className={`uppercase ${color} ${font}`}>
     {text}
   </h3>
 );
