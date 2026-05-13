@@ -28,6 +28,10 @@ const ImageOverlay = ({ variant = "one", width, height, image = "bilde_1.jpg", t
       text: "text_variant_3",
       image: "image_variant_3",
     },
+    four: {
+      text: "text_variant_4",
+      image: "image_variant_4",
+    },
   };
 
   const currentVariant = variants[variant] || variants.one;

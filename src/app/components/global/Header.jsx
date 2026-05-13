@@ -36,8 +36,8 @@ const Header = () => {
     </>
   );
   return (
-    <header className="grid col-(--content-col) grid-cols-subgrid h-30 sticky top-0 z-20 bg-background">
-      <section className="flex justify-between items-center">
+    <header className="grid col-(--full-col) grid-cols-subgrid h-30 sticky top-0 z-20 bg-background">
+      <section className="flex justify-between items-center  col-(--content-col) grid-cols-subgrid ">
         <ActiveLink href="/" className="cursor-pointer">
           {" "}
           <Image src="/assets/Logo_Original.svg" width={60} height={60} alt="Logo" loading="eager" />
