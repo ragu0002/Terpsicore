@@ -20,3 +20,6 @@
 .accent {
   color: var(--accent);
 }
+.white {
+  color: var(--color-background);
+}

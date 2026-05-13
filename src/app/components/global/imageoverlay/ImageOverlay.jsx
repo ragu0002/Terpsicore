@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Hero } from "../../typography";
 import "./imageoverlay.css";
 
-const ImageOverlay = ({ variant = "one", width, height, image = "bilde_1.jpg", text }) => {
+const ImageOverlay = ({ variant = "one", width, height, image = "bilde_1.jpg", text, color = "accent" }) => {
   const variants = {
     one: {
       text: "text_variant_1",
@@ -43,7 +43,7 @@ const ImageOverlay = ({ variant = "one", width, height, image = "bilde_1.jpg", t
   return (
     <div className={`my-grid ${currentVariant.image.imgwidth} ${currentVariant.image.imgHeigth}`}>
       <div className={`${currentVariant.text} ${currentVariant.text.rowStart} ${currentVariant.text.rowSpan} ${currentVariant.text.colStart} ${currentVariant.text.colSpan} z-10 text-center`}>
-        <Hero text={text} color="accent" font="font-serif" />
+        <Hero text={text} color={color} font="font-serif" />
       </div>
       <div className={`rounded-4xl overflow-hidden ${currentVariant.image} ${currentVariant.image.rowStart} ${currentVariant.image.rowSpan} ${currentVariant.image.colStart} ${currentVariant.image.colSpan} `}>
         <Image src={`/assets/images/${image}`} width={width} height={height} alt="terpsiimage" className="w-full h-full object-cover" />

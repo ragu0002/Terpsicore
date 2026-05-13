@@ -4,7 +4,7 @@ import { SmallParagraph } from "../typography";
 import Image from "next/image";
 const Oppdrag = () => {
   return (
-    <section className="grid col-(--content-col) grid-cols-5 gap-3 md:rows-4 mt-20">
+    <section className="grid col-(--content-col) grid-cols-5 gap-3 md:rows-4 mt-20 z-2">
       <div className="col-span-2 md:col-start-1 md:row-start-1 md:row-span-2">
         <ImageOverlay width="2000" height="4000" text="oppdrag" image="bilde_1.jpg" variant="five" />
       </div>
