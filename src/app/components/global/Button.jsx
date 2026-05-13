@@ -1,8 +1,26 @@
-import { RegularText, SmallParagraph } from "../typography";
+import { SmallParagraph } from "../typography";
 
-const Button = ({ variant, text }) => {
+const variants = {
+  dark: "bg-foreground text-background border-background",
+  light: "bg-background text-foreground border-foreground",
+  accent: "bg-(--accent) text-background border-(--accent)",
+};
+
+const Button = ({ variant = "light", text }) => {
   return (
-    <button className={`border rounded-4xl px-5 py-2 cursor-pointer hover:rounded-none ${variant === "dark" ? "bg-foreground text-background" : ""}`}>
+    <button
+      className={`
+        border
+        rounded-4xl
+        px-5
+        py-2
+        cursor-pointer
+        transition-all
+        duration-300
+        hover:rounded-none
+        ${variants[variant]}
+      `}
+    >
       <SmallParagraph text={text} color="uppercase" />
     </button>
   );

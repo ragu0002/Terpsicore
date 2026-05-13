@@ -6,6 +6,7 @@ import Underline from "./components/global/Underline";
 import HomeHero from "./components/home/HomeHero";
 import OmOss from "./components/home/OmOss";
 import Oppdrag from "./components/home/Oppdrag";
+import WorkshopInfo from "./components/home/WorkshopInfo";
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
         <HomeHero />
         <OmOss />
         <Oppdrag />
+        <WorkshopInfo />
       </main>
     </>
   );
