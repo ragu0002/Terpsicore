@@ -6,18 +6,18 @@ import Image from "next/image";
 export default function Oppdrag() {
   return (
     <>
-      <main className="grid col-(--full-col) grid-cols-subgrid">
-        <div className="col-(--full-col) flex gap-3">
-          <div className="rounded-r-4xl overflow-hidden">
+      <main className="grid col-(--full-col) grid-cols-subgrid mt-30">
+        <div className="col-(--full-col) md:flex gap-3 grid grid-cols-[1fr_minmax(0,calc(100vw-2*var(--gutter)))_1fr] items-stretch grid-flow-col ">
+          <div className="rounded-r-4xl overflow-hidden h-120">
             <Image width={200} height={200} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
           </div>
-          <ImageOverlay width="2000" height="4000" text="oppdrag" image="bilde_2.jpg" variant="four" />
-          <div className="rounded-l-4xl overflow-hidden">
+          <ImageOverlay width="2000" height="4000" text="oppdrag" image="bilde_2.jpg" variant="four" containerH="h-100" />
+          <div className="rounded-l-4xl overflow-hidden h-120">
             <Image width={200} height={200} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
           </div>
         </div>
         <div className="col-(--content-col)">
-          <div className="md:px-50 grid gap-3 pt-5">
+          <div className="md:px-50 grid gap-3 ">
             <SmallParagraph text="Vi er tilgjengelige for en hel rekke ulike typer oppdrag hele året. Både store og små oppdrag tas gledelig i mot. Vi kan blant annet stille opp på julebord, holde workshops, være statister eller bakgrunnsdansere, holde dansegulv på utesteder, opptre på jubileer, banketter og mye mer. Da det tar litt tid å øve inn danser ber vi om at forespørsler om oppdrag sendes i god tid i forkant. " />
             <Underline text="intressert i å booke oss?" />
             <SmallParagraph text="Send inn skjema så tar vi kontakt med deg." />

@@ -9,7 +9,7 @@ export default async function WorkshopPage() {
   const { data } = await fetchData();
 
   return (
-    <main className="grid col-(--content-col) grid-cols-subgrid">
+    <main className="grid col-(--content-col) grid-cols-subgrid mt-30">
       <Landing />
       <section className="grid gap-5">
         <XlargeText text="kommende Workshops" color="accent" />
