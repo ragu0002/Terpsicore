@@ -14,7 +14,7 @@ export default async function WorkshopPage() {
       <section className="grid gap-5">
         <XlargeText text="kommende Workshops" color="accent" />
         {data.stories.map((story) => (
-          <Workshop key={story.id} blok={story.content} />
+          <Workshop key={story.id} blok={story.content} slug={story.full_slug} />
         ))}
       </section>
     </main>

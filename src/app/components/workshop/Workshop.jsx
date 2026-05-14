@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { LargeText, Paragraph, SmallParagraph } from "../typography";
 import Button from "../global/Button";
-export default function Workshop({ blok }) {
+import Link from "next/link";
+export default function Workshop({ blok, slug }) {
   return (
     <section className="grid md:flex gap-10">
       <div className="rounded-4xl overflow-hidden basis-0 grow w-full h-70">
@@ -12,9 +13,11 @@ export default function Workshop({ blok }) {
           <SmallParagraph text={blok.date} color="accent" />
           <LargeText text={blok.name} />
           <SmallParagraph text={blok.introduction} />
-          <div className="flex justify-end">
-            <Button text="les mer" />
-          </div>
+          <Link href={`/detalje/${slug}`}>
+            <div className="flex justify-end">
+              <Button text="les mer" />
+            </div>
+          </Link>
         </div>
       </div>
     </section>
