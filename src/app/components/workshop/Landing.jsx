@@ -6,11 +6,11 @@ const Landing = () => {
   return (
     <section className="wrapper">
       <div className="mobileHero">
-        <ImageOverlay width="200" height="200" text="workshops" image="bilde_1.jpg" variant="one" />
+        <ImageOverlay width="200" height="200" text="workshops" image="bilde_1.jpg" variant="one" containerH="h-140" />
       </div>
 
       <div className="hero_image">
-        <ImageOverlay width="200" height="200" text="workshops" image="bilde_1.jpg" variant="three" />
+        <ImageOverlay width="200" height="200" text="workshops" image="bilde_1.jpg" variant="three" containerH="h-150" />
       </div>
 
       <div className="image_1 rounded-4xl overflow-hidden">

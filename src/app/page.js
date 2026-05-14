@@ -7,6 +7,7 @@ import HomeHero from "./components/home/HomeHero";
 import OmOss from "./components/home/OmOss";
 import Oppdrag from "./components/home/Oppdrag";
 import WorkshopInfo from "./components/home/WorkshopInfo";
+import ForestillingGalleri from "./components/home/ForestillingGalleri";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
         <OmOss />
         <Oppdrag />
         <WorkshopInfo />
+        <ForestillingGalleri />
       </main>
     </>
   );
