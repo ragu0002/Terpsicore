@@ -49,3 +49,21 @@
   grid-row: 4 / span full;
   grid-column: 1 / span full;
 }
+.text_variant_7 {
+  grid-row: 17 / span full;
+  grid-column: 1 / span full;
+  text-align: end;
+}
+.image_variant_7 {
+  grid-row: 1 / span 17;
+  grid-column: 1 / span 18;
+}
+.text_variant_8 {
+  grid-row: 1 / span full;
+  grid-column: 5 / span full;
+  text-align: start;
+}
+.image_variant_8 {
+  grid-row: 2 / span full;
+  grid-column: 1 / span 9;
+}
