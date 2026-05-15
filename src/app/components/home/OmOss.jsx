@@ -16,32 +16,32 @@ const OmOss = () => {
         </div>
         <div className="relative left-10 w-screen overflow-hidden">
           <div className="flex gap-3 overflow-x-auto overflow-y-hidden pb-4">
-            <div className="rounded-4xl overflow-hidden shrink-0 w-62 h-88">
+            <div className="md:rounded-4xl rounded-2xl overflow-hidden shrink-0 w-62 h-88">
               <Image width={250} height={350} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
             </div>
 
-            <div className="rounded-4xl overflow-hidden shrink-0 w-62 h-88">
+            <div className="md:rounded-4xl rounded-2xl overflow-hidden shrink-0 w-62 h-88">
               <Image width={250} height={350} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
             </div>
 
-            <div className="rounded-4xl overflow-hidden shrink-0 w-62 h-88">
+            <div className="md:rounded-4xl rounded-2xl overflow-hidden shrink-0 w-62 h-88">
               <Image width={250} height={350} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
             </div>
 
-            <div className="rounded-4xl overflow-hidden shrink-0 w-62 h-88">
+            <div className="md:rounded-4xl rounded-2xl overflow-hidden shrink-0 w-62 h-88">
               <Image width={250} height={350} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
             </div>
 
-            <div className="rounded-4xl overflow-hidden shrink-0 w-62 h-88">
+            <div className="md:rounded-4xl rounded-2xl overflow-hidden shrink-0 w-62 h-88">
               <Image width={250} height={350} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
             </div>
-            <div className="rounded-4xl overflow-hidden shrink-0 w-62 h-88">
+            <div className="md:rounded-4xl rounded-2xl overflow-hidden shrink-0 w-62 h-88">
               <Image width={250} height={350} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
             </div>
-            <div className="rounded-4xl overflow-hidden shrink-0 w-62 h-88">
+            <div className="md:rounded-4xl rounded-2xl overflow-hidden shrink-0 w-62 h-88">
               <Image width={250} height={350} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
             </div>
-            <div className="rounded-4xl overflow-hidden shrink-0 w-62 h-88">
+            <div className="md:rounded-4xl rounded-2xl overflow-hidden shrink-0 w-62 h-88">
               <Image width={250} height={350} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
             </div>
           </div>
