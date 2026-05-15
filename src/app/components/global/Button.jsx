@@ -12,8 +12,8 @@ const Button = ({ variant = "light", text }) => {
       className={`
         border
         rounded-4xl
-        px-5
-        py-2
+        px-4
+        py-1
         cursor-pointer
         transition-all
         duration-300

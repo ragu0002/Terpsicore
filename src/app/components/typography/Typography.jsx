@@ -6,7 +6,7 @@ export const Hero = ({ text, color, font = "font-helvetica" }) => (
   </h1>
 );
 export const XlargeText = ({ text, color, font = "font-serif" }) => (
-  <h2 style={{ fontSize: "var(--step-5)" }} className={`uppercase  ${color} ${font}`}>
+  <h2 style={{ fontSize: "var(--step-4)" }} className={`uppercase  ${color} ${font}`}>
     {text}
   </h2>
 );
@@ -16,7 +16,7 @@ export const LargeText = ({ text, color, font = "font-helvetica" }) => (
   </h3>
 );
 export const RegularText = ({ text, color, font = "font-helvetica" }) => (
-  <h4 style={{ fontSize: "var(--step-2)" }} className={`uppercase ${color} ${font}`}>
+  <h4 style={{ fontSize: "var(--step-1)" }} className={`uppercase ${color} ${font}`}>
     {text}
   </h4>
 );
