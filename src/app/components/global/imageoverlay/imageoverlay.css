@@ -23,12 +23,12 @@
 }
 .text_variant_3 {
   grid-row: 1 / span 2;
-  grid-column: 1 / span 20;
+  grid-column: 1 / span full;
   text-align: start;
 }
 .image_variant_3 {
   grid-row: 3 / span full;
-  grid-column: 1 / span 19;
+  grid-column: 1 / span full;
 }
 .text_variant_4 {
   grid-row: 17 / span 2;

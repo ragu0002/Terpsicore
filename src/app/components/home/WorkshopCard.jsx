@@ -1,19 +1,30 @@
 import Image from "next/image";
 import { FooterText, LargeText, Paragraph, SmallParagraph } from "../typography";
-import Button from "../global/Button";
-export default function WorkshopCard({ blok }) {
+import Link from "next/link";
+
+export default function WorkshopCard({ blok, slug }) {
+  const date = new Date(blok.date);
+  const formattedDate = date.toLocaleDateString("nb-NO", {
+    day: "2-digit",
+    month: "long",
+  });
+  const formattedTime = date.toLocaleTimeString("nb-NO", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
   return (
-    <section className="flex gap-4 h-full w-full">
-      <div className="md:rounded-4xl rounded-2xl overflow-hidden basis-0 grow w-full h-50">
+    <Link className="md:flex grid gap-4 h-96 md:h-full w-full items-center md:items-start" href={`/detalje/${slug}`}>
+      <div className="md:rounded-4xl rounded-2xl overflow-hidden w-full h-full">
         <Image width={200} height={200} src={blok.main_image.filename} alt={blok.main_image.alt || "image"} className="w-full h-full object-cover" />{" "}
       </div>
-      <div className="basis-0 grow">
-        <div className="grid md:py-5 gap-4 ">
-          <FooterText text={blok.date} color="white" />
-          <Paragraph text={blok.name} color="white" />
-          <FooterText text={blok.introduction} color="white" />
+      <div className="grid md:py-5 justify-center gap-3">
+        <div>
+          <FooterText text={`${formattedDate} Kl ${formattedTime}`} color="white" />
+          <Paragraph text={blok.name} color="white uppercase" />
         </div>
+        <FooterText text={blok.introduction} color="white" />
       </div>
-    </section>
+    </Link>
   );
 }
