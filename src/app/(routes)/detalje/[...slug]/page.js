@@ -3,6 +3,7 @@ import Button from "@/app/components/global/Button";
 import Link from "next/link";
 import ImageOverlay from "@/app/components/global/imageoverlay/ImageOverlay";
 import { RegularText, SmallParagraph, Paragraph } from "@/app/components/typography";
+import Questions from "@/app/components/workshop/singel/Questions";
 export default async function DetailPage({ params }) {
   const storyblokApi = getStoryblokApi();
   const { slug } = await params;
@@ -78,11 +79,8 @@ export default async function DetailPage({ params }) {
               <Button text="send inn" variant="dark" />
             </form>
           </div>
-          <div className="mt-7">
-            <RegularText text="ofte stilte spørsmål" color="accent" />
-          </div>
-          <hr className="2px accent mb-3" />
         </div>
+        <Questions />
       </section>
     </main>
   );
