@@ -3,6 +3,16 @@ import { LargeText, Paragraph, SmallParagraph } from "../typography";
 import Button from "../global/Button";
 import Link from "next/link";
 export default function Workshop({ blok, slug }) {
+  const date = new Date(blok.date);
+  const formattedDate = date.toLocaleDateString("nb-NO", {
+    day: "2-digit",
+    month: "long",
+  });
+  const formattedTime = date.toLocaleTimeString("nb-NO", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
   return (
     <section className="grid md:flex gap-10">
       <div className="md:rounded-4xl rounded-2xl overflow-hidden basis-0 grow w-full h-70">
@@ -10,7 +20,7 @@ export default function Workshop({ blok, slug }) {
       </div>
       <div className="basis-0 grow">
         <div className="grid md:py-5 gap-4 ">
-          <SmallParagraph text={blok.date} color="accent" />
+          <SmallParagraph text={`${formattedDate} kl ${formattedTime}`} color="accent" />
           <LargeText text={blok.name} />
           <SmallParagraph text={blok.introduction} />
           <Link href={`/detalje/${slug}`}>

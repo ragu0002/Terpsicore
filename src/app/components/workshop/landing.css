@@ -17,7 +17,7 @@
   .wrapper {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    height: 50rem;
+    height: 45rem;
   }
 
   .mobileHero {
@@ -50,6 +50,6 @@
     grid-row: 1 / span 3;
     display: flex;
     align-items: start;
-    margin: 150px 0 10px 0;
+    margin: 130px 0 10px 0;
   }
 }
