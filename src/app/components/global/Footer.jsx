@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="md:col-5 md:row-1">
           <RegularText text="Kontakt oss" />
           <div className="md:pt-3">
-            <a href="mailto:teprsicore.dans@gmail.com" className="cursor-pointer">
+            <a href="mailto:teprsicore.dans@gmail.com" className="cursor-pointer break-all">
               <FooterText text="teprsicore.dans@gmail.com" />
             </a>
           </div>
