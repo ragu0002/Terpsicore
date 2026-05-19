@@ -4,9 +4,9 @@ import { FaTiktok } from "react-icons/fa6";
 import { RegularText, FooterText } from "../typography";
 const Footer = () => {
   return (
-    <footer className="grid col-(--full-col) grid-cols-subgrid grid-rows-5">
+    <footer className="grid col-(--full-col) grid-cols-subgrid grid-rows-5 mt-20 md:mt-40">
       <div className="grid col-(--content-col) justify-items-center row-start-1 row-span-2 z-10">
-        <Image src="/assets/Logo_Original.svg" width={200} height={200} alt="Logo" loading="eager"  />
+        <Image src="/assets/Logo_Original.svg" width={200} height={200} alt="Logo" loading="eager" />
       </div>
 
       <section className="grid col-(--full-col) bg-foreground rounded-t-[4vw] row-start-2 row-span-4 z-0"></section>
@@ -14,15 +14,25 @@ const Footer = () => {
         <div className="md:col-5 md:row-1">
           <RegularText text="Kontakt oss" />
           <div className="md:pt-3">
-            <FooterText text="teprsicore.dans@gmail.com" />
+            <a href="mailto:teprsicore.dans@gmail.com" className="cursor-pointer">
+              <FooterText text="teprsicore.dans@gmail.com" />
+            </a>
           </div>
         </div>
         <div className="md:col-4 md:row-1">
           <RegularText text="følg med" />
           <div className="flex gap-2 md:gap-5 md:pt-3">
-            <FaInstagram size={30} />
-            <FaFacebookSquare size={30} />
-            <FaTiktok size={30} />
+            <a href="https://www.instagram.com/terpsichore.dans" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              <FaInstagram size={30} />
+            </a>
+
+            <a href="https://www.facebook.com/TerpsichoreDansekompani" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              <FaFacebookSquare size={30} />
+            </a>
+
+            <a href="https://www.tiktok.com/@terpsichore.dansekompani" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              <FaTiktok size={30} />
+            </a>
           </div>
         </div>
         <div className="md:col-span-2 md:row-1">
