@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-const ActiveLink = ({ href, children }) => {
+const ActiveLink = ({ href, children, onClick }) => {
   const pathname = usePathname();
   const isActive = pathname === href;
   return (
-    <Link href={href} className={isActive ? "gradient-underline-sm text-(--accent)" : "hover:text-(--accent) transition-all transition-discrete"}>
+    <Link href={href} onClick={onClick} className={isActive ? "md:text-(--accent) underline-offset-4 text-background underline decoration-1 md:no-underline" : "hover:text-(--accent) transition-all transition-discrete"}>
       {children}
     </Link>
   );
