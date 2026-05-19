@@ -14,11 +14,11 @@ const Landing = () => {
       </div>
 
       <div className="image_1 rounded-4xl overflow-hidden">
-        <Image width={200} height={200} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
+        <Image width={2000} height={2000} alt="gallery image" src="/assets/images/workshop_2.jpg" className="w-full h-full object-cover" loading="eager" />
       </div>
 
       <div className="image_2 rounded-4xl overflow-hidden">
-        <Image width={200} height={200} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
+        <Image width={2000} height={2000} alt="gallery image" src="/assets/images/workshop_1.jpg" className="w-full h-full object-cover" loading="eager" />
       </div>
 
       <div className="text_1">
