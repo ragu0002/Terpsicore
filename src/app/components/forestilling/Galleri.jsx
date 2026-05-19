@@ -5,7 +5,7 @@ const Galleri = ({ story }) => {
   const image = story.content.images;
   if (!story?.content?.images) return null;
   return (
-    <div className="text-center py-20">
+    <div className="text-center pt-20">
       <XlargeText text={`bilder fra "${story.content.titel}"`} font="font-serif" color="accent" />
 
       <section className="grid grid-rows-4 gap-2 grid-cols-5 md:grid-cols-5 md:grid-rows-2 md:gap-4 md:h-150 h-160">

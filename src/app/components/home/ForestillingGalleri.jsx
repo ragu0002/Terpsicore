@@ -4,7 +4,7 @@ import Button from "../global/Button";
 import { FooterText, SmallParagraph } from "../typography";
 const ForestillingGalleri = () => {
   return (
-    <section className="grid col-(--content-col) grid-cols-subgrid my-20">
+    <section className="grid col-(--content-col) grid-cols-subgrid mt-20">
       <div className="grid grid-cols-2 grid-rows-[400px_250px_250px] md:grid-rows-[300px_200px_200px] md:grid-cols-5 gap-3">
         <div className="col-span-2 row-1 md:col-span-3 md:col-start-1 md:row-start-1 md:row-span-1 h-full">
           <ImageOverlay size="xlarge" width="2000" height="4000" text="årlig forestilling" image="bilde_1.jpg" variant="six" containerH="h-full" />
