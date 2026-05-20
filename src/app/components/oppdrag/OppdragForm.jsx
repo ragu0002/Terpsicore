@@ -39,10 +39,16 @@ const OppdragForm = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
   const { register, handleSubmit, formState, reset } = form;
   const { errors, isSubmitting } = formState;
-  const onSubmit = (data) => {
-    console.log("VALID FORM DATA:", data);
+  const onSubmit = async (data) => {
+    const response = await fetch("/api/oppdrag", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
 
-    reset();
+    if (response.ok) {
+      reset();
+    }
   };
   return (
     <div>
