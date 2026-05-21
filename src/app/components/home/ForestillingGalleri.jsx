@@ -1,6 +1,7 @@
 import ImageOverlay from "../global/imageoverlay/ImageOverlay";
 import Image from "next/image";
 import Button from "../global/Button";
+import Link from "next/link";
 import { FooterText, SmallParagraph } from "../typography";
 const ForestillingGalleri = () => {
   return (
@@ -21,7 +22,9 @@ const ForestillingGalleri = () => {
         <div className="hidden md:grid md:col-start-4 md:row-start-3 md:col-span-2 md:p-3">
           <FooterText text="Årets høydepunkt er vår egenproduserte forestilling på USF Verftet som finner sted rundt mars/ april hvert år. Forestillingsprosessen starter tidlig i høstsemesteret, med innstudering konsentrert på vårsemesteret, og resulterer i en oppsetning som viser kompaniets egenkoreograferte tolkning av årets tematikk." />
           <div className="flex justify-end pt-4">
-            <Button text="Les mer" />
+            <Link href="/forestilling">
+              <Button text="Les mer" />
+            </Link>
           </div>
         </div>
       </div>
