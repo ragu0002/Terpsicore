@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../global/Button";
 import ImageOverlay from "../global/imageoverlay/ImageOverlay";
 import { SmallParagraph } from "../typography";
@@ -11,7 +12,9 @@ const Oppdrag = () => {
       <div className="col-span-3 pt-30 md:col-start-3 md:col-span-2 md:row-start-1 md:px-2">
         <SmallParagraph text="I tillegg til treninger fire timer i uka tar vi stadig på oss oppdrag. De siste årene har vi blant annet hatt oppdrag for Gullruten, Jussformidlingen og Studentersamfunnet i Bergen, samt deltatt i samarbeid som Døgnfluer med Vill Vill Vest, og Kulturnatt." />
         <div className="flex justify-end pt-2">
-          <Button text="book oss" />
+          <Link href="/oppdrag">
+            <Button text="book oss" />
+          </Link>
         </div>
       </div>
       <div className="rounded-4xl overflow-hidden hidden md:block">

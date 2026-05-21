@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "../global/Button";
 import "./omoss.css";
 import { SmallParagraph, XlargeText } from "../typography";
+import Link from "next/link";
 
 const OmOss = ({ stories }) => {
   return (
@@ -11,7 +12,9 @@ const OmOss = ({ stories }) => {
           <XlargeText text="om oss" color="accent" />
           <SmallParagraph text={stories.content.text} />
           <div className="flex justify-end">
-            <Button text="bli medlem" />
+            <Link href="/audition">
+              <Button text="bli medlem" />
+            </Link>
           </div>
         </div>
 
