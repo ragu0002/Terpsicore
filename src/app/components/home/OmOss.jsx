@@ -5,7 +5,7 @@ import { SmallParagraph, XlargeText } from "../typography";
 
 const OmOss = ({ stories }) => {
   return (
-    <section className="grid col-(--full-col) grid-cols-subgrid mt-15 overflow-hidden">
+    <section className="grid col-(--full-col) grid-cols-subgrid mt-15 overflow-hidden" id="next-section">
       <div className="col-(--full-col) grid-cols-subgrid grid md:grid-cols-2 items-start gap-10 md:col-(--content-col)">
         <div className="col-(--content-col) grid gap-4 md:pr-0 md:col-1 md:row-1">
           <XlargeText text="om oss" color="accent" />
