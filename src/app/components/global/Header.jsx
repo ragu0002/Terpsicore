@@ -38,7 +38,7 @@ const Header = () => {
     </>
   );
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
+    <header className={`fixed top-0 w-full z-50 backdrop-blur-md transition-all duration-300  "bg-background/4" : "bg-background"}`}>
       <section className={`grid grid-cols-(--project-grid-cols) ${open ? "bg-(--accent)" : pathname === "/" ? "bg-transparent" : "bg-background"}`}>
         <div className="col-(--content-col) flex items-center h-30 justify-between">
           <ActiveLink href="/" className="cursor-pointer" onClick={() => setOpen(false)}>
@@ -47,7 +47,7 @@ const Header = () => {
           <button className="cursor-pointer md:hidden -mr-2" onClick={() => setOpen((o) => !o)} aria-label="Toggle menu">
             {open ? <VscClose size={40} className="text-background" /> : <RxHamburgerMenu size={40} />}
           </button>
-          <div className="hidden md:block">{links}</div>
+          <div className={`hidden md:block  ${pathname === "/" ? "text-(--accent)" : ""}`}>{links}</div>
         </div>
         {open && (
           <div className="col-(--full-col) grid grid-cols-subgrid md:hidden bg-(--accent) h-screen text-background">
