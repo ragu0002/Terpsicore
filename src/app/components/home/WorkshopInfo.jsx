@@ -3,10 +3,9 @@ import { SmallParagraph } from "../typography";
 import Button from "../global/Button";
 import { getStoryblokApi } from "@/lib/storyblok";
 import WorkshopCard from "./WorkshopCard";
-
+import { Suspense } from "react";
+import ErrorMessage from "../global/ErrorMeassage";
 export default async function WorkshopInfo() {
-  const { data } = await fetchData();
-
   return (
     <section className="grid col-(--full-col) grid-cols-subgrid bg-foreground -mt-30 z-1 pb-20">
       <div className="col-(--content-col) mt-50 grid gap-8 md:grid-cols-2">
@@ -19,20 +18,36 @@ export default async function WorkshopInfo() {
           </div>
         </div>
         <div className="mt-10 grid gap-8 md:col-2">
-          {data.stories.slice(0, 2).map((story) => (
-            <WorkshopCard key={story.id} blok={story.content} slug={story.full_slug} />
-          ))}
+          <Suspense fallback={<div>Loading...</div>}>
+            <FetchWorkshop />
+          </Suspense>
         </div>
       </div>
     </section>
   );
 }
 
-export async function fetchData() {
-  const storyblokApi = getStoryblokApi();
+const FetchWorkshop = async () => {
+  try {
+    const storyblokApi = getStoryblokApi();
 
-  return await storyblokApi.get("cdn/stories", {
-    version: "draft",
-    starts_with: "workshop/",
-  });
-}
+    const { data } = await storyblokApi.get("cdn/stories", {
+      version: "draft",
+      starts_with: "workshop/",
+    });
+    if (!data) {
+      return <ErrorMessage text="No Workshop data found." />;
+    }
+    return (
+      <>
+        {data.stories.slice(0, 2).map((story) => (
+          <WorkshopCard key={story.id} blok={story.content} slug={story.full_slug} />
+        ))}
+      </>
+    );
+  } catch (error) {
+    console.error("Workshop fetch failed:", error);
+
+    return <ErrorMessage text="We’re having some trouble loading this data, try again later!" />;
+  }
+};
