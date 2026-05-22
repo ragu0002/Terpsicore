@@ -9,7 +9,7 @@ const Audition = () => {
 
         <div className="text-center md:text-start grid md:grid-cols-2 md:gap-5 md:h-50">
           <div className="md:rounded-4xl rounded-2xl overflow-hidden hidden md:block">
-            <Image width={2000} height={2000} alt="gallery image" src="/assets/images/siste_forestilling_1.jpg" className="w-full h-full object-cover" />
+            <Image width={2000} height={2000} alt="gallery image" src="/assets/images/siste_forestilling_1.jpg" className="w-full h-full object-cover" loading="eager" />
           </div>
           <div className="flex items-start h-full pt-5">
             <SmallParagraph text="Vi holder audition i starten av hvert høstsemester. Vi tar imot alle danseglade studenter som har lyst til å prøve seg. Mer informasjon kommer nærmere semesterstart!" />
