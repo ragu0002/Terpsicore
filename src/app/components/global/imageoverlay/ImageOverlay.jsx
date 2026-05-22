@@ -36,6 +36,10 @@ const ImageOverlay = ({ variant = "one", width, height, image = "bilde_1.jpg", t
       text: "text_variant_8",
       image: "image_variant_8",
     },
+    nine: {
+      text: "text_variant_9",
+      image: "image_variant_9",
+    },
   };
   const TextComponent = size === "xlarge" ? XlargeText : Hero;
   const currentVariant = variants[variant] || variants.one;
