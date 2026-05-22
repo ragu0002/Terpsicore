@@ -9,7 +9,7 @@ const Oppdrag = () => {
       <div className="col-span-2 md:col-start-1 md:row-start-1 md:row-span-2">
         <ImageOverlay size="xlarge" width="2000" height="4000" text="oppdrag" image="oppdrag_3.jpg" variant="five" containerH="h-150" containerW="w-full" />
       </div>
-      <div className="col-span-3 pt-30 md:col-start-3 md:col-span-2 md:row-start-1 md:px-2">
+      <div className="col-span-3 pt-30 mb-5 md:col-start-3 md:col-span-2 md:row-start-1 md:px-2">
         <SmallParagraph text="I tillegg til treninger fire timer i uka tar vi stadig på oss oppdrag. De siste årene har vi blant annet hatt oppdrag for Gullruten, Jussformidlingen og Studentersamfunnet i Bergen, samt deltatt i samarbeid som Døgnfluer med Vill Vill Vest, og Kulturnatt." />
         <div className="flex justify-end pt-2">
           <Link href="/oppdrag">

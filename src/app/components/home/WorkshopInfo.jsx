@@ -12,7 +12,7 @@ export default async function WorkshopInfo() {
       <div className="col-(--content-col) mt-50 grid gap-8 md:grid-cols-2">
         <div className="md:col-1 grid gap-4 self-start ">
           <ImageOverlay size="xlarge" width="2000" height="4000" text="workshops" image="workshop_home.jpg" variant="three" color="white" containerH="h-90" />
-          <SmallParagraph text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt" color="white" />
+          <SmallParagraph text="Dansekompaniet arrangerer åpne workshops der fokus ligger på bevegelsesglede, samhold og kreativitet. Deltakerne får prøve ulike dansestiler, utvikle nye ferdigheter og utforske eget uttrykk i et trygt og sosialt miljø. Workshopene er åpne for alle nivåer og gir en fin mulighet til å bli kjent med nye mennesker gjennom dans og felles opplevelser." color="white" />
 
           <Link className="flex justify-end" href="/workshop">
             <Button text="Les mer" variant="dark" />
