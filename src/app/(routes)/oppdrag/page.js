@@ -9,11 +9,11 @@ export default function Oppdrag() {
       <main className="grid col-(--full-col) grid-cols-subgrid mt-30">
         <div className="col-(--full-col) md:flex gap-3 grid grid-cols-[1fr_minmax(0,calc(100vw-2*var(--gutter)))_1fr] items-stretch grid-flow-col ">
           <div className="rounded-r-4xl overflow-hidden h-120">
-            <Image width={200} height={200} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
+            <Image width={200} height={200} alt="gallery image" src="/assets/images/oppdrag_2_2.jpg" className="w-full h-full object-cover" />
           </div>
-          <ImageOverlay width="2000" height="4000" text="oppdrag" image="bilde_2.jpg" variant="four" containerH="h-100" />
+          <ImageOverlay width="2000" height="4000" text="oppdrag" image="oppdrag_2_1.jpg" variant="four" containerH="h-100" />
           <div className="rounded-l-4xl overflow-hidden h-120">
-            <Image width={200} height={200} alt="gallery image" src="/assets/images/bilde_1.jpg" className="w-full h-full object-cover" />
+            <Image width={200} height={200} alt="gallery image" src="/assets/images/oppdrag_2_3.jpg" className="w-full h-full object-cover" />
           </div>
         </div>
         <div className="col-(--content-col)">

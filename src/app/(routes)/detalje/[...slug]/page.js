@@ -38,20 +38,20 @@ const FetchDetalje = async ({ params }) => {
     return (
       <main className="grid col-(--content-col) grid-cols-subgrid mt-30">
         <section className="grid md:grid-cols-2 md:grid-rows-10">
-          <div className="grid gap-3 md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-full">
+          <div className="grid gap-3 md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-full z-1">
             <div className="grid gap-3 md:block">
               <Link href="/workshop" className="flex justify-start">
                 <Button text="tilbake" />
               </Link>
               <div className="md:hidden block ">
-                <ImageOverlay width="2000" height="4000" text={story.content.name} image="bilde_2.jpg" variant="seven" containerH="h-160" containerW="w-full" />
+                <ImageOverlay width="2000" height="4000" text={story.content.name} image={story.content.main_image.filename} variant="seven" containerH="h-160" containerW="w-full" size="xlarge" />
               </div>
               <div className="hidden md:block ">
-                <ImageOverlay width="2000" height="4000" text={story.content.name} image="bilde_2.jpg" variant="eight" containerH="h-200" containerW="w-full" />
+                <ImageOverlay width="2000" height="4000" text={story.content.name} image={story.content.main_image.filename} variant="eight" containerH="h-200" containerW="w-full" />
               </div>
             </div>
           </div>
-          <div className="grid gap-3 md:col-start-2 md:col-span-1 md:row-start-3 md:row-span-full">
+          <div className="grid gap-3 md:col-start-2 md:col-span-1 md:row-start-3 md:row-span-full z-2">
             <div>
               <div className="mt-10 md:mt-0 flex justify-between">
                 <RegularText text={formattedDate} color="accent" />
