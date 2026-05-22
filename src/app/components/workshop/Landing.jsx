@@ -22,7 +22,7 @@ const Landing = () => {
       </div>
 
       <div className="text_1">
-        <SmallParagraph text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt" />
+        <SmallParagraph text="Vi inviterer til inspirerende workshops med fokus på danseglede, fellesskap og kreativ utfoldelse. Gjennom ulike dansestiler får deltakerne utforske bevegelse, rytme og uttrykk i et sosialt og inkluderende miljø. Workshopene passer for både nybegynnere og erfarne dansere, og skaper en arena hvor man kan møte nye mennesker, dele erfaringer og oppleve gleden ved dans sammen." />
       </div>
     </section>
   );
