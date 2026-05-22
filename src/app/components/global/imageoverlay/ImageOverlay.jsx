@@ -46,7 +46,7 @@ const ImageOverlay = ({ variant = "one", width, height, image = "bilde_1.jpg", t
         <TextComponent text={text} color={color} font="font-serif" />
       </div>
       <div className={`md:rounded-4xl rounded-2xl overflow-hidden h-full w-full ${currentVariant.image} ${currentVariant.image.rowStart} ${currentVariant.image.rowSpan} ${currentVariant.image.colStart} ${currentVariant.image.colSpan} `}>
-        <Image src={`/assets/images/${image}`} width={width} height={height} alt="terpsiimage" className="w-full h-full object-cover" />
+        <Image src={image?.startsWith("http") ? image : `/assets/images/${image}`} width={width} height={height} alt="terpsiimage" className="w-full h-full object-cover" />
       </div>
     </div>
   );
