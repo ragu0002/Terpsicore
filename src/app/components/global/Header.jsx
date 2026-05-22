@@ -10,27 +10,32 @@ import ActiveLink from "./ActiveLink";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-
+  const handleNavClick = () => {
+    setOpen(false);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 50);
+  };
   const links = (
     <>
       <ul className="md:flex md:justify-between md:gap-20 grid align-center gap-10 text-center">
         <li>
-          <ActiveLink href="/forestilling" onClick={() => setOpen(false)}>
+          <ActiveLink href="/forestilling" onClick={handleNavClick}>
             <NavigationText text="Forestilling" font={open === true ? `font-serif` : `font-helvetica`} size={open === true ? `var(--step-4)` : `var(--step-0)`} />
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink href="/workshop" onClick={() => setOpen(false)}>
+          <ActiveLink href="/workshop" onClick={handleNavClick}>
             <NavigationText text="Workshop" font={open === true ? `font-serif` : `font-helvetica`} size={open === true ? `var(--step-4)` : `var(--step-0)`} />
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink href="/audition" onClick={() => setOpen(false)}>
+          <ActiveLink href="/audition" onClick={handleNavClick}>
             <NavigationText text="Audition" font={open === true ? `font-serif` : `font-helvetica`} size={open === true ? `var(--step-4)` : `var(--step-0)`} />
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink href="/oppdrag" onClick={() => setOpen(false)}>
+          <ActiveLink href="/oppdrag" onClick={handleNavClick}>
             <NavigationText text="Oppdrag" font={open === true ? `font-serif` : `font-helvetica`} size={open === true ? `var(--step-4)` : `var(--step-0)`} />
           </ActiveLink>
         </li>
