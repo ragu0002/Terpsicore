@@ -75,3 +75,11 @@
   grid-row: 2 / span full;
   grid-column: 1 / span 9;
 }
+.text_variant_9 {
+  grid-row: 18 / span full;
+  grid-column: 1 / span full;
+}
+.image_variant_9 {
+  grid-row: 1 / span 19;
+  grid-column: 1 / span full;
+}
