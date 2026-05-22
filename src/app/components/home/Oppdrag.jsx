@@ -18,10 +18,10 @@ const Oppdrag = () => {
         </div>
       </div>
       <div className="rounded-4xl overflow-hidden hidden md:block">
-        <Image width={250} height={350} alt="gallery image" src="/assets/images/oppdrag_1.jpg" className="w-full h-full object-cover" />
+        <Image width={250} height={350} alt="gallery image" src="/assets/images/oppdrag_1.jpg" className="w-full h-full object-cover" loading="eager" />
       </div>
       <div className="rounded-4xl overflow-hidden hidden md:block md:row-start-2 md:row-span-2 md:col-start-3 md:col-span-full w-full h-90">
-        <Image width={250} height={350} alt="gallery image" src="/assets/images/oppdrag_2.jpg" className="w-full h-full object-cover" />
+        <Image width={250} height={350} alt="gallery image" src="/assets/images/oppdrag_2.jpg" className="w-full h-full object-cover" loading="eager" />
       </div>
     </section>
   );

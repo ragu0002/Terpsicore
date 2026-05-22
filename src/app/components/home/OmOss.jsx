@@ -22,7 +22,7 @@ const OmOss = ({ stories }) => {
           <div className="flex  gap-6  h-full">
             {stories.content.images?.map((img) => (
               <div key={img.id} className="md:rounded-4xl rounded-2xl overflow-hidden shrink-0 w-66 h-full">
-                <Image width={250} height={350} alt={img.alt || "gallery image"} src={img.filename} className="w-full h-full object-cover" />
+                <Image width={250} height={350} alt={img.alt || "gallery image"} src={img.filename} className="w-full h-full object-cover" loading="eager" />
               </div>
             ))}
           </div>

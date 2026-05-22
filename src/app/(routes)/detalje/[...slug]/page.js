@@ -6,6 +6,7 @@ import { RegularText, SmallParagraph } from "@/app/components/typography";
 import Questions from "@/app/components/workshop/singel/Questions";
 import { Suspense } from "react";
 import ErrorMessage from "@/app/components/global/ErrorMeassage";
+import SingelForm from "@/app/components/workshop/singel/SingelForm";
 
 export default async function DetailPage({ params }) {
   return (
@@ -78,17 +79,7 @@ const FetchDetalje = async ({ params }) => {
                 <RegularText text="meld deg på her" color="accent" />
               </div>
               <hr className="2px accent mb-3" />
-              <form className="grid gap-3">
-                <div>
-                  <SmallParagraph />
-                  <input type="text" id="fornavn" className="w-full border rounded-xl px-5 py-2 cursor-pointer focus:outline-accent placeholder:text-foreground" placeholder="Navn"></input>
-                </div>
-                <div>
-                  <SmallParagraph />
-                  <input type="text" id="fornavn" className="w-full border rounded-xl px-5 py-2 cursor-pointer focus:outline-accent placeholder:text-foreground" placeholder="Email"></input>
-                </div>
-                <Button text="send inn" variant="dark" />
-              </form>
+              <SingelForm />
             </div>
           </div>
           <Questions />
