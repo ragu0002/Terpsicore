@@ -2,8 +2,8 @@
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
-import { FooterText, SmallParagraph } from "../typography";
+
+import { FooterText } from "../typography";
 import Button from "../global/Button";
 const oppdragSchema = z.object({
   fornavn: z
@@ -19,8 +19,8 @@ const oppdragSchema = z.object({
     .min(2, "Name must have minimum two letters.")
     .regex(/^[\p{L}\s'-]+$/u, "Please enter a valid name."),
   email: z.string().email(),
-  date: z.coerce.number().min(1),
-  telefon: z.coerce.number().min(1),
+  date: z.string().min(1, "Please enter a date"),
+  telefon: z.coerce.number().min(1, "Please enter a phone number"),
   comment: z.string(),
 });
 const OppdragForm = () => {
@@ -36,7 +36,7 @@ const OppdragForm = () => {
       comment: "",
     },
   });
-  const [submitStatus, setSubmitStatus] = useState(null);
+
   const { register, handleSubmit, formState, reset } = form;
   const { errors, isSubmitting } = formState;
   const onSubmit = async (data) => {
@@ -75,7 +75,7 @@ const OppdragForm = () => {
           <div className={`${Object.values(errors).length ? "min-h-6" : ""}`}>
             <FooterText color="text-red-600" text={errors.date?.message} />
           </div>
-          <input type="number" id="date" className="w-full border rounded-xl px-5 py-2 cursor-pointer focus:outline-accent placeholder:text-foreground" placeholder="Dato for booking" {...register("date")}></input>
+          <input type="date" id="date" className="w-full border rounded-xl px-5 py-2 cursor-pointer focus:outline-accent placeholder:text-foreground" placeholder="Dato for booking" {...register("date")}></input>
         </div>
         <div>
           <div className={`${Object.values(errors).length ? "min-h-6" : ""}`}>
@@ -94,7 +94,9 @@ const OppdragForm = () => {
 
           <textarea className="border rounded-xl px-5 py-2 h-80 p-2 w-full focus:outline-accent placeholder:text-foreground" id="comment" placeholder="Skriv litt om hva du vil booke oss til.." {...register("comment")} />
         </div>
-        <Button variant="dark" type="submit" disabled={isSubmitting} text={isSubmitting ? "sender..." : "send inn"} />
+        <div className="md:col-2 md:w-full">
+          <Button variant="dark" styling="w-full" type="submit" disabled={isSubmitting} text={isSubmitting ? "sender..." : "send inn"} />
+        </div>
       </form>
     </div>
   );

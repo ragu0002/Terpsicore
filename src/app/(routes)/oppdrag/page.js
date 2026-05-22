@@ -16,7 +16,7 @@ export default function Oppdrag() {
             <Image width={200} height={200} alt="gallery image" src="/assets/images/oppdrag_2_3.jpg" className="w-full h-full object-cover" />
           </div>
         </div>
-        <div className="col-(--content-col)">
+        <div className="col-(--content-col) ">
           <div className="md:px-50 grid gap-3 ">
             <SmallParagraph text="Vi er tilgjengelige for en hel rekke ulike typer oppdrag hele året. Både store og små oppdrag tas gledelig i mot. Vi kan blant annet stille opp på julebord, holde workshops, være statister eller bakgrunnsdansere, holde dansegulv på utesteder, opptre på jubileer, banketter og mye mer. Da det tar litt tid å øve inn danser ber vi om at forespørsler om oppdrag sendes i god tid i forkant. " />
             <Underline text="intressert i å booke oss?" />

@@ -6,7 +6,7 @@ const variants = {
   accent: "bg-(--accent) text-background border-(--accent)",
 };
 
-const Button = ({ variant = "light", text }) => {
+const Button = ({ variant = "light", text, styling }) => {
   return (
     <button
       className={`
@@ -18,7 +18,7 @@ const Button = ({ variant = "light", text }) => {
         transition-all
         duration-300
         hover:rounded-none
-        ${variants[variant]}
+        ${variants[variant]} ${styling}
       `}
     >
       <SmallParagraph text={text} color="uppercase" />
