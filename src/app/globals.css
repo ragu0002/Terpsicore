@@ -35,6 +35,3 @@ textarea {
   color: var(--foreground);
   font-family: var(--font-sans), serif;
 }
-html {
-  scroll-behavior: smooth;
-}

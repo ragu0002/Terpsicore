@@ -20,7 +20,7 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={`grid grid-cols-(--project-grid-cols) grid-rows-[auto_1fr_auto] ${inter.variable} ${instrumentSerif.variable} `}>
         <Header />
         {children}

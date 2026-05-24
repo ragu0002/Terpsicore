@@ -45,10 +45,10 @@ const FetchDetalje = async ({ params }) => {
                 <Button text="tilbake" />
               </Link>
               <div className="md:hidden block ">
-                <ImageOverlay width="2000" height="4000" text={story.content.name} image={story.content.main_image.filename} variant="seven" containerH="h-160" containerW="w-full" size="xlarge" />
+                <ImageOverlay width="1200" height="800" text={story.content.name} image={story.content.main_image.filename} variant="seven" containerH="h-160" containerW="w-full" size="xlarge" />
               </div>
               <div className="hidden md:block ">
-                <ImageOverlay width="2000" height="4000" text={story.content.name} image={story.content.main_image.filename} variant="eight" containerH="h-200" containerW="w-full" />
+                <ImageOverlay width="1200" height="800" text={story.content.name} image={story.content.main_image.filename} variant="eight" containerH="h-200" containerW="w-full" />
               </div>
             </div>
           </div>
