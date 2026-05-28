@@ -24,7 +24,7 @@ const ForestillingClient = ({ stories }) => {
   return (
     <div className="col-(--full-col) grid grid-cols-subgrid ">
       <div className="col-(--content-col) grid grid-cols-subgrid">
-        <ImageOverlay width="2000" height="4000" text="forestilling" image="bilde_2.jpg" variant="two" containerH="h-120" containerW="w-full" />
+        <ImageOverlay width="1000" height="1000" text="forestilling" image="bilde_2.jpg" variant="two" containerH="h-120" containerW="w-full" />
 
         <div className="md:text-center md:grid grid-cols-5 *:col-start-2 *:col-span-3 py-5">
           <SmallParagraph text="Årets høydepunkt er vår egenproduserte forestilling på USF Verftet som finner sted rundt mars/ april hvert år. Forestillingsprosessen starter tidlig i høstsemesteret, med innstudering konsentrert på vårsemesteret, og resulterer i en oppsetning som viser kompaniets egenkoreograferte tolkning av årets tematikk." />
